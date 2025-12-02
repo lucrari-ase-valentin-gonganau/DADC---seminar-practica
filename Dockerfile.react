@@ -1,0 +1,18 @@
+# Folosește imaginea oficială Node
+FROM node:20-alpine
+
+# Setează directorul de lucru
+WORKDIR /app
+
+# Copiază fișierele de configurare și instalează dependențele
+COPY package*.json ./
+RUN npm install
+
+# Copiază restul codului
+COPY . .
+
+# Expune portul implicit Next.js
+EXPOSE 3000
+
+# Rulează în mod development (cu hot reload)
+CMD ["npm", "run", "dev"]

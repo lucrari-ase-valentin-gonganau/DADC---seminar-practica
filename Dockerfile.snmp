@@ -1,0 +1,11 @@
+FROM critoma/amd64_u24_noble_ism_security:latest
+
+USER root
+
+# Instalăm SNMP agentul (serverul)
+RUN apt-get update && \
+    apt-get install -y snmpd
+
+EXPOSE 161/udp
+
+CMD ["sh", "-c", "service snmpd start && tail -f /dev/null"]

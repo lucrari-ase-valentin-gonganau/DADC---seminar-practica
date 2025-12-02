@@ -1,0 +1,87 @@
+services:
+  mongo:
+    image: mongo:7.0
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: stud
+      MONGO_INITDB_ROOT_PASSWORD: stud123
+      MONGO_INITDB_DATABASE: snmpdb
+    volumes:
+      - ./data/mongo:/data/db
+    restart: unless-stopped
+  db:
+    image: mysql:8.0
+    container_name: mysql
+    restart: unless-stopped
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: stud123
+      MYSQL_DATABASE: blobstore
+      MYSQL_USER: stud
+      MYSQL_PASSWORD: stud123
+    networks:
+      - dad_network
+    ports:
+      - "3306:3306"
+
+  snmp_agent:
+    build:
+      context: .
+      dockerfile: Dockerfile.snmp
+    container_name: snmp_agent
+    ports:
+      - "161:161/udp"
+    networks:
+      - dad_network
+    restart: unless-stopped
+
+  java_javalin:
+    build: .
+    container_name: java_javalin_app
+    volumes:
+      - ./C01:/home/stud/C01
+    ports:
+      # este folosit de macos acest port, asa ca mapez 7001 de la 7000
+      - "7001:7000"
+    networks:
+      - dad_network
+    restart: unless-stopped
+
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.react
+    container_name: react-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/apps/react-app
+      - /apps/react-app/node_modules
+    restart: unless-stopped
+  node_api:
+    build: .
+    container_name: node_api_app
+    volumes:
+      - ./apps/node_api:/usr/src/app
+    ports:
+      - "3000:3000"
+    environment:
+      DB_HOST: mysql
+      DB_USER: stud
+      DB_PASSWORD: stud123
+      DB_NAME: blobstore
+    depends_on:
+      - db
+    networks:
+      - dad_network
+    restart: unless-stopped
+networks:
+  dad_network:
+# volumes:
+#   mongo_data:
+#   mysql_data:
