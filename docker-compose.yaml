@@ -44,13 +44,29 @@ services:
     # amd 64 pentru a rula pe macos cu m1/m2
     platform: linux/amd64
     volumes:
-      - ./C01:/home/stud/C01
+      - ./apps/java:/usr/src/app
     ports:
       # este folosit de macos acest port, asa ca mapez 7001 de la 7000
       - "7001:7000"
     networks:
       - dad_network
     restart: unless-stopped
+
+  node-api:
+    image: node:22.17
+    container_name: node-api
+    working_dir: /usr/src/app
+    volumes:
+      - ./apps/node-api:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=development
+    command: npm start
+    restart: unless-stopped
+    networks:
+      - dad_network
 
   react-app:
     build:
@@ -77,8 +93,6 @@ services:
       DB_USER: stud
       DB_PASSWORD: stud123
       DB_NAME: blobstore
-    depends_on:
-      - db
     networks:
       - dad_network
     restart: unless-stopped
