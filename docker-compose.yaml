@@ -87,12 +87,7 @@ services:
     volumes:
       - ./apps/node_api:/usr/src/app
     ports:
-      - "3000:3000"
-    environment:
-      DB_HOST: mysql
-      DB_USER: stud
-      DB_PASSWORD: stud123
-      DB_NAME: blobstore
+      - "8080:8080"
     networks:
       - dad_network
     restart: unless-stopped
