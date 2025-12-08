@@ -8,4 +8,4 @@ RUN apt-get update && \
 
 EXPOSE 161/udp
 
-CMD ["sh", "-c", "service snmpd start && tail -f /dev/null"]
+CMD ["snmpd", "-f", "-Lo"]

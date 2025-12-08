@@ -11,7 +11,7 @@ services:
     volumes:
       - ./data/mongo:/data/db
     restart: unless-stopped
-  db:
+  mysql:
     image: mysql:8.0
     container_name: mysql
     restart: unless-stopped
@@ -41,6 +41,8 @@ services:
   java_javalin:
     build: .
     container_name: java_javalin_app
+    # amd 64 pentru a rula pe macos cu m1/m2
+    platform: linux/amd64
     volumes:
       - ./C01:/home/stud/C01
     ports:

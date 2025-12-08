@@ -5,11 +5,11 @@ FROM node:20-alpine
 WORKDIR /app
 
 # Copiază fișierele de configurare și instalează dependențele
-COPY package*.json ./
+COPY ./apps/react-app/package*.json ./
 RUN npm install
 
 # Copiază restul codului
-COPY . .
+COPY ./apps/react-app ./
 
 # Expune portul implicit Next.js
 EXPOSE 3000
