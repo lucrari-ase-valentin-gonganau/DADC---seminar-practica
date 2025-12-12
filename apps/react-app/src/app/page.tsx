@@ -11,15 +11,17 @@ export default function Home() {
         style={{ maxWidth: 500, margin: "0 auto" }}
       >
         <div className="card-body text-center">
-          <h5 className="card-title mb-3">Proiect DAD</h5>
-          <p className="card-text text-muted mb-4">Alege una dintre acțiuni:</p>
+          <h5 className="card-title mb-3">Project DAD</h5>
+          <p className="card-text text-muted mb-4">
+            Choose one of the actions:
+          </p>
 
           <div className="d-flex justify-content-around">
             <button
               className="btn btn-primary"
-              onClick={() => router.push("/procesare")}
+              onClick={() => router.push("/upload")}
             >
-              Procesare imagine
+              Upload Image
             </button>
             <button
               className="btn btn-secondary"

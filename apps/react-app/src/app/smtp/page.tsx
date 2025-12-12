@@ -1,3 +1,5 @@
-export default function SMTP() {
-  return <div>SMTP Page</div>;
+import SMTP from "@/containers/smtp";
+
+export default function SMTPPage() {
+  return <SMTP />;
 }

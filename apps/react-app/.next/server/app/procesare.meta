@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/procesare/layout,_N_T_/procesare/page,_N_T_/procesare"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/procesare/__PAGE__",
+    "/procesare",
+    "/_index",
+    "/_head"
+  ]
+}

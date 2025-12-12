@@ -1,4 +1,17 @@
 services:
+  artemis:
+    image: apache/activemq-artemis:latest
+    container_name: artemis-broker
+    environment:
+      ARTEMIS_USER: admin
+      ARTEMIS_PASSWORD: admin
+    ports:
+      - "61616:61616"
+      - "8161:8161"
+    # volumes:
+    #   - artemis-data:/var/lib/artemis
+    restart: unless-stopped
+
   mongo:
     image: mongo:7.0
     container_name: mongo
@@ -51,6 +64,8 @@ services:
     networks:
       - dad_network
     restart: unless-stopped
+    depends_on:
+      - artemis
 
   node-api:
     image: node:22.17
@@ -81,6 +96,7 @@ services:
       - .:/apps/react-app
       - /apps/react-app/node_modules
     restart: unless-stopped
+
   node_api:
     build: .
     container_name: node_api_app
@@ -91,8 +107,11 @@ services:
     networks:
       - dad_network
     restart: unless-stopped
+
 networks:
   dad_network:
 # volumes:
 #   mongo_data:
 #   mysql_data:
+volumes:
+  artemis-data:

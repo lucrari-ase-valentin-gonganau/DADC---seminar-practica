@@ -36,3 +36,16 @@ Upload and packiging: "The ZIP file has the source code files + _.sh/_.bat file 
 For teacher: just type in the root of this folder the next command:
 :$ docker compose up -d
 This will build and run all the 6 containers needed for the project.
+
+##Implement the Complete Workflow
+Image upload flow from React → Java Javalin → JMS → EJB MDB → RMI servers → MySQL
+Notification system back to front-end when processing is complete
+Integration between all 6 containers
+
+##Testing and Integration
+Test the complete image processing pipeline
+Verify SNMP data collection
+Test REST API endpoints
+
+Pentur JAVA ( Maven ) un fel de npm in nodejs ( e nevoie de fisierul pom.xml in radacina proiectului )
+mvn dependency:copy-dependencies
