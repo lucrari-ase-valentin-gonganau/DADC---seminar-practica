@@ -8,9 +8,13 @@ ENV PATH="$JAVA_HOME/bin:$CATALINA_HOME/bin:$NODE_HOME/bin:$PATH"
 USER stud
 WORKDIR /home/stud/app
 
-COPY --chown=stud:stud apps/java/. .
+COPY --chown=stud:stud apps/Javalin/. .
+
+# Compile Java application
+RUN mkdir -p target/classes && \
+    javac -cp "target/dependency/*" -d target/classes src/main/java/eu/App.java
+
+EXPOSE 8081
 
 
-EXPOSE 7000
-
-CMD ["java", "-jar", "/home/stud/app/javalin.jar"]
+CMD ["java", "-cp", "target/classes:target/dependency/*", "eu.App"]

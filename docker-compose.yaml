@@ -10,6 +10,8 @@ services:
       - "8161:8161"
     # volumes:
     #   - artemis-data:/var/lib/artemis
+    networks:
+      - dad_network
     restart: unless-stopped
 
   mongo:
@@ -56,11 +58,15 @@ services:
     container_name: java_javalin_app
     # amd 64 pentru a rula pe macos cu m1/m2
     platform: linux/amd64
-    volumes:
-      - ./apps/java:/usr/src/app
+    # volumes:
+    #   - ./apps/Javalin:/home/stud/app  # Comentat pentru a nu suprascrie target/classes
+    environment:
+      - BROKER_URL=tcp://artemis:61616
+      - BROKER_USER=admin
+      - BROKER_PASSWORD=admin
     ports:
-      # este folosit de macos acest port, asa ca mapez 7001 de la 7000
-      - "7001:7000"
+      # este folosit de macos acest port, asa ca mapez 8081
+      - "8081:8081"
     networks:
       - dad_network
     restart: unless-stopped
