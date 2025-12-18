@@ -43,11 +43,8 @@ public class App {
 		app.post("/upload-and-process",  ctx -> App.upload(ctx));
 	}
 	
-
-	
 	protected static void upload(Context ctx) {
 		UploadedFile uploadFile = ctx.uploadedFile("file");
-		
 		
 		if(uploadFile == null) {
 			ctx.status(404).result("The image not found!");
@@ -86,12 +83,9 @@ public class App {
 		int y = Integer.parseInt(ctx.formParam("y"));
 		int width = Integer.parseInt(ctx.formParam("width"));
 		int height = Integer.parseInt(ctx.formParam("height"));
-		
-		
 
-		
 		App.sendToBroker(tempFile, x, y, width, height);
-
+ 
 
 		ctx.result("File received:" + tempFile + " and it was sent to broker to be processed!");
 		
@@ -102,13 +96,14 @@ public class App {
 	}
 	
 	
-	protected static void sendToBroker(Path tempFile, int x1, int y1, int x2, int y2) {
+	protected static void sendToBroker(Path tempFile, int x, int y, int w, int h) {
 		try { 
 			Session session = conn.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
 			FileInputStream fis = new FileInputStream(tempFile.toString());
-			Queue queue = session.createQueue("image.queue");
-			MessageProducer producer = session.createProducer(queue);
+			Topic topic = session.createTopic("image.topic");
+			// Queue queue = session.createQueue("image.queue");
+			MessageProducer producer = session.createProducer(topic);
 			
 			BytesMessage message = session.createBytesMessage();
 			byte[] buffer = new byte[1024 * 1024];
@@ -119,17 +114,17 @@ public class App {
 			}
 			
 			
-			message.setIntProperty("x1", x1);
-			message.setIntProperty("y1", y1);
-			message.setIntProperty("x2", x2);
-			message.setIntProperty("y2", y2);
+			message.setIntProperty("x", x);
+			message.setIntProperty("y", y);
+			message.setIntProperty("w", w);
+			message.setIntProperty("h", h);
 			
 			producer.setDeliveryMode(DeliveryMode.PERSISTENT);
 			producer.send(message);
 			
 			System.out.println("Message ID: " + message.getJMSMessageID());
 	        System.out.println("Message sent successfully to queue: image.queue");
-	        System.out.println("Coordinates: (" + x1 + "," + y1 + ") -> (" + x2 + "," + y2 + ")");
+	        System.out.println("Coordinates: (" + x + "," + y + ") -> (" + w + "," + h + ")");
 	        System.out.println("File: " + tempFile);
 			
 			fis.close();
@@ -147,9 +142,7 @@ public class App {
 			System.err.println("Failed to read file!");
 			e.printStackTrace();
 		}
-				
-		
-				
+
 	}
 	
 	
