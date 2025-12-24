@@ -2,3 +2,5 @@
 ./apps/react-app/.next
 ./apps/node-api/node_modules
 ./data
+./node_modules
+data
