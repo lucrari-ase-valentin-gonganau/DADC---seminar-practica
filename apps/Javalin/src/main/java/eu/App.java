@@ -145,7 +145,6 @@ public class App {
 
 	}
 	
-	
 	private static void configureBroker() throws JMSException {
         String brokerUrl = System.getenv().getOrDefault("BROKER_URL", App.BROKER_URL_DEFAULT);
         String brokerUser = System.getenv().getOrDefault("BROKER_USER", App.BROKER_USER_DEFAULT);

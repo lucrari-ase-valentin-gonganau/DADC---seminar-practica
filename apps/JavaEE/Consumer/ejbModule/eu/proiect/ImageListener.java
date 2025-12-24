@@ -1,16 +1,9 @@
 package eu.proiect;
 
-
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 import java.sql.SQLException;
-import java.util.Iterator;
-
-import javax.imageio.ImageIO;
-import javax.imageio.ImageReader;
-import javax.imageio.stream.ImageInputStream;
 import javax.jms.BytesMessage;
 import javax.jms.JMSException;
 import javax.jms.Message;
@@ -18,13 +11,14 @@ import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 
 class ImageListener implements MessageListener {
-
+	static final String RMI_SERVER_PORT = "1099";
+	static final String RMI_SERVER_IP = "localhost";
+	
     @Override
     public void onMessage(Message message) {
         byte[] imageData = null;
         
         try {
-      
             if (message instanceof BytesMessage) {
                 BytesMessage byteMsg = (BytesMessage) message;
         
@@ -45,6 +39,8 @@ class ImageListener implements MessageListener {
                 System.out.println("Cords zoom: (" + x + "," + y + ") -> (" + w + "," + h + ")");
 
                 processImageViaRMI(imageData, x, y, w, h);
+                
+                
                
             } else if (message instanceof TextMessage) {
                 TextMessage msg = (TextMessage) message;
@@ -61,71 +57,24 @@ class ImageListener implements MessageListener {
 
 
     private void processImageViaRMI(byte[] imageBytes, int x, int y, int w, int h) throws IOException, SQLException {
-
-        System.out.println("Loading image of " + imageBytes.length + " bytes for processing via RMI");
+    	System.out.println("Loading image of " + imageBytes.length + " bytes for processing via RMI");
         
+        int port = Integer.parseInt(System.getenv().getOrDefault("RMI_SERVER_PORT", RMI_SERVER_PORT));
+        String addressIp = System.getenv().getOrDefault("RMI_SERVER_IP", RMI_SERVER_IP);
         
-        byte[] zoomedImage = applyZoom(imageBytes, x,y,w,h);
+        try {
+        	Registry registry = LocateRegistry.getRegistry(addressIp, port);
+        	
+        	ImageZoomProcessorInterface remote = (ImageZoomProcessorInterface) registry.lookup("ImageProcessorService");
+        	
+        	String raspuns = remote.processIt(imageBytes, x, y, w, h);
+        	System.out.println("The answer received from RMI SERVER: " + raspuns);
+        	
+        } catch (Exception e) {
+        	e.printStackTrace();
+        }
         
-        System.out.println("Applied the zoom on image");
-        
-        db.saveAsBlob(imageBytes, zoomedImage);
-        
-        System.out.println("Saved to database!");
-        
-//        ImageZoomRMI processor = lookupRMIObject();
-//        processor.processImage(imageBytes);
     }
     
     
-    
-    private byte[] applyZoom(byte[] imageBytes, int x, int y, int w, int h) throws IOException {
-
-    	ByteArrayInputStream bais = new ByteArrayInputStream(imageBytes);
-    	
-    	// detect format image 
-    	ImageInputStream iis = ImageIO.createImageInputStream(bais);
-    	Iterator<ImageReader> readers = ImageIO.getImageReaders(iis);
-    	
-    	if(!readers.hasNext()) {
-    		throw new IOException("Unsupported image format");
-    	}
-    	
-    	ImageReader reader = readers.next();
-    	String formatName = reader.getFormatName();
-    	
-    	
-    	reader.setInput(iis);
-    	BufferedImage originalImage = reader.read(0);
-    	
-    	if(originalImage == null) {
-    		throw new IOException("No image received");
-    	}
-
-        System.out.println("Original size: " +
-                originalImage.getWidth() + "x" + originalImage.getHeight());
-        System.out.println("Detected format: " + formatName);
-        
-        int startX = Math.max(0,  Math.min(x, originalImage.getWidth() - 1));
-        int startY = Math.max(0,  Math.min(y,  originalImage.getHeight() - 1));
-        int width = w;
-        int height = h;
-        
-        System.out.println("Zoom region: x=" + startX + ", y=" + startY + ", w=" + width + ", h=" + height);
-
-        BufferedImage zoomedImage = originalImage.getSubimage(startX, startY, width, height);
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        ImageIO.write(zoomedImage, formatName, baos);
-
-        return baos.toByteArray();
-	}
-
-
-
-
-
-//	private ImageZoomRMI lookupRMIObject() {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
 }

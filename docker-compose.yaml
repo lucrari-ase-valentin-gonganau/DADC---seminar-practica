@@ -60,8 +60,6 @@ services:
     container_name: java_javalin_app
     # amd 64 pentru a rula pe macos cu m1/m2
     platform: linux/amd64
-    # volumes:
-    #   - ./apps/Javalin:/home/stud/app  # Comentat pentru a nu suprascrie target/classes
     environment:
       - BROKER_URL=tcp://artemis:61616
       - BROKER_USER=admin
@@ -75,6 +73,14 @@ services:
     depends_on:
       - artemis
 
+  # java_ee:
+  #   environment:
+  #     - BROKER_URL=tcp://artemis:61616
+  #     - BROKER_USER=admin
+  #     - BROKER_PASSWORD=admin
+  #     - DB_URL=jdbc:mysql://localhost:3306/blobstore?useSSL=false
+  #     - DB_USER=stud
+  #     - DB_PASS=stud123
   node-api:
     image: node:22.17
     container_name: node-api

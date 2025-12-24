@@ -1,3 +1,15 @@
+FLUX:
+
+Fluxul actual: 1. Front-end → Container 1 (Javalin REST API)
+• Imaginea este trimisă prin REST API. 2. Container 1 → Container 2 (JMS Topic)
+• Javalin publică imaginea ca mesaj binar pe JMS Topic. 3. Container 3 (EJB MDB)
+• Se abonează la JMS Topic.
+• Este și client Java RMI pentru Container 4 și 5 (RMI Servers) → aici se face zoom-ul imaginii. 4. Container 4 & 5 (Java RMI Servers)
+• Procesează imaginea (zoom) și returnează rezultatul către MDB din container 3. 5. Container 3 → Container 6 (MySQL BLOB)
+• MDB salvează imaginea modificată în MySQL. 6. Container 6 → Node.js REST API
+• Node.js expune endpoint-uri pentru a descărca imaginea BMP și a afișa SNMP. 7. Notificare Front-end
+• Container 1 notifică front-end-ul prin WebSocket/REST că imaginea este gata și redirecționează către URL-ul Node.js pentru descărcare.
+
 Semester Assignment
 Deadline - YYYY/MM/dd HH:mm: 2024/01/15 (Current Year/01/15 23:50 GMT+2)
 Problem description: "Create 6 Docker containers from Docker Image: https://hub.docker.com/r/critoma/linux-u20-dev-security-ism
