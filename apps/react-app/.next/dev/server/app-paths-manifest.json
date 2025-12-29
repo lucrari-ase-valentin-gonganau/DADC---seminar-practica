@@ -1,8 +1,5 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/procesare/page": "app/procesare/page.js",
-  "/procesare/rezultat/page": "app/procesare/rezultat/page.js",
-  "/upload/page": "app/upload/page.js",
-  "/upload/result/page": "app/upload/result/page.js"
+  "/smtp/page": "app/smtp/page.js",
+  "/upload/page": "app/upload/page.js"
 }

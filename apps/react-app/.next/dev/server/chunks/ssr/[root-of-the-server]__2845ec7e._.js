@@ -131,7 +131,7 @@ const UploadForm = ()=>{
         form.append("y", String(Math.round(crop.y)));
         form.append("width", String(Math.round(crop.width)));
         form.append("height", String(Math.round(crop.height)));
-        const path = process.env.BASE_PATH_URL || "http://localhost:8081";
+        const path = process.env.BASE_PATH_URL_JAVALIN || "http://localhost:8081";
         const uploadImageAndProcessIt = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].create({
             baseURL: path,
             headers: {

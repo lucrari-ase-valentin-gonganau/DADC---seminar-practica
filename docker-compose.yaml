@@ -25,6 +25,8 @@ services:
       MONGO_INITDB_DATABASE: snmpdb
     volumes:
       - ./data/mongo:/data/db
+    networks:
+      - dad_network
     restart: unless-stopped
   mysql:
     image: mysql:8.0
@@ -82,20 +84,27 @@ services:
   #     - DB_USER=stud
   #     - DB_PASS=stud123
   node-api:
-    image: node:22.17
+    build:
+      context: .
+      dockerfile: Dockerfile.node-api
     container_name: node-api
-    working_dir: /usr/src/app
-    volumes:
-      - ./apps/node-api:/usr/src/app
-      - /usr/src/app/node_modules
     ports:
-      - "8080:8080"
+      - "8082:8082"
     environment:
-      - NODE_ENV=development
-    command: npm start
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://stud:stud123@mongo:27017/snmpdb?authSource=admin
+      - DB_HOST=mysql
+      - DB_USER=stud
+      - DB_PASSWORD=stud123
+      - DB_NAME=blobstore
+      - SNMP_TARGET_IP=snmp_agent
+      - SNMP_COMMUNITY=public
     restart: unless-stopped
     networks:
       - dad_network
+    depends_on:
+      - mongo
+      - mysql
 
   react-app:
     build:
@@ -106,6 +115,8 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=development
+      - BASE_PATH_URL_SNMP=http://localhost:8082
+      - BASE_PATH_URL_JAVALIN=http://localhost:8081
     volumes:
       - .:/apps/react-app
       - /apps/react-app/node_modules

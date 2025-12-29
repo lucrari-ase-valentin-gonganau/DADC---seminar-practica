@@ -34,7 +34,7 @@ const UploadForm = () => {
     form.append("width", String(Math.round(crop.width)));
     form.append("height", String(Math.round(crop.height)));
 
-    const path = process.env.BASE_PATH_URL || "http://localhost:8081";
+    const path = process.env.BASE_PATH_URL_JAVALIN || "http://localhost:8081";
 
     const uploadImageAndProcessIt = axios.create({
       baseURL: path,

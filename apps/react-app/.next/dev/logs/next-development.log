@@ -1,1752 +1,345 @@
-[00:00:00.548] Server  LOG      ✓ Ready in 399ms
-[00:07:48.037] Browser LOG     Răspuns de la server: {}
-[00:08:09.414] Server  LOG      ✓ Compiled in 64ms
-[00:08:12.328] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@\nonloadend@","status":500}
-[00:12:29.493] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@\nonloadend@","status":500}
-[00:16:25.531] Server  LOG      ✓ Compiled in 14ms
-[00:17:13.744] Server  LOG      ✓ Compiled in 3ms
-[00:17:20.383] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"multipart/form-data"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@\nonloadend@","status":500}
-[00:17:29.441] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"multipart/form-data"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:19:38.027] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"multipart/form-data"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:21:22.226] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"multipart/form-data"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:22:31.505] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"multipart/form-data"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:24:17.909] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"multipart/form-data"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:26:51.144] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"multipart/form-data"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:27:38.015] Server  LOG      ✓ Compiled in 4ms
-[00:27:48.807] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:28:02.403] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:29:36.508] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:29:36.863] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:29:37.013] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:29:37.151] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:29:37.272] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:29:37.378] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:29:37.513] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:29:37.617] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:29:56.379] Server  LOG      ✓ Compiled in 6ms
-[00:33:07.451] Browser LOG     Trimitem imaginea cu crop: {"height":361.859375,"unit":"px","width":208,"x":328.5,"y":9.5}
-[00:33:07.451] Browser ERROR   Eroare la trimiterea imaginii: {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/x-www-form-urlencoded"},"maxBodyLength":null,"maxContentLength":null,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"settle@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4205:180\nonloadend@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:4720:174\n@http://localhost:3000/_next/static/chunks/node_modules_b0d01e1e._.js:5524:66","status":500}
-[00:34:49.551] Server  LOG      ✓ Compiled in 13ms
-[00:35:14.511] Server  LOG      ✓ Compiled in 6ms
-[00:37:12.292] Server  LOG      ✓ Compiled in 5ms
-[00:37:19.823] Browser LOG     Trimitem imaginea cu crop: {"height":371.359375,"unit":"px","width":210,"x":326.5,"y":0}
-[00:37:19.823] Browser LOG     Răspuns de la server: {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8081","data":{},"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"multipart/form-data"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/upload-and-process","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":"File received:/var/folders/xg/0mg1t0kd09xg1_yg61t_v8bm0000gn/T/upload-3885189668458313397.jpg and the image send to broker with crop paramaters","headers":{"content-length":"143","content-type":"text/plain"},"request":{},"status":200,"statusText":"OK"}
-[00:38:20.417] Server  LOG      ✓ Compiled in 4ms
-[00:40:51.254] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 |
-  3 | const Processing = () => {
-  4 |   const router = useRouter();
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:01.367] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:01.367] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:01.367] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:03.176] Server  ERROR    ⨯ ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-
-./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-
-./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:41:03.305] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:03.305] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:03.305] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:03.646] Browser ERROR   uncaughtError: Error: ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:41:03.797] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:03.797] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:03.797] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:03.797] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:03.797] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:03.797] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:05.333] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:05.333] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:05.333] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:09.079] Server  ERROR    ⨯ ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-
-./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-
-./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:41:09.130] Browser ERROR   uncaughtError: Error: ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:41:09.265] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:09.265] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:09.265] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:09.265] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:09.265] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:09.265] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:12.588] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:12.588] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:12.588] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:16.955] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:16.955] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:16.955] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:17.601] Server  ERROR    ⨯ ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-
-./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-
-./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:41:17.676] Browser ERROR   uncaughtError: Error: ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:41:17.816] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:17.816] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:17.816] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:17.816] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:17.816] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:17.816] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:24.464] Browser ERROR   ./src/containers/processing/index.tsx:1:1
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/router";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You have a Server Component that imports next/router. Use next/navigation instead.
-Learn more: https://nextjs.org/docs/app/api-reference/functions/use-router
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:24.464] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:24.464] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/router";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:29.628] Browser ERROR   ./src/containers/processing/index.tsx:1:10
-Ecmascript file had an error
-> 1 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  2 |
-  3 | const Processing = () => {
-  4 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:29.628] Browser ERROR   ./src/containers/processing/index.tsx:1:21
-Ecmascript file had an error
-> 1 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  2 |
-  3 | const Processing = () => {
-  4 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:33.301] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/navigation";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:33.301] Browser ERROR   ./src/containers/processing/index.tsx:1:10
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/navigation";
-    |          ^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:33.301] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/navigation";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:34.111] Server  ERROR    ⨯ ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/navigation";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-
-./src/containers/processing/index.tsx:1:10
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/navigation";
-    |          ^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-
-./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/navigation";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:41:34.159] Browser ERROR   uncaughtError: Error: ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/navigation";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:41:34.294] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/navigation";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:34.294] Browser ERROR   ./src/containers/processing/index.tsx:1:10
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/navigation";
-    |          ^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:34.294] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/navigation";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:34.294] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/navigation";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:34.294] Browser ERROR   ./src/containers/processing/index.tsx:1:10
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/navigation";
-    |          ^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:34.294] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/navigation";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:45.055] Browser ERROR   ./src/containers/processing/index.tsx:2:10
-Ecmascript file had an error
-  1 | import { useRouter } from "next/navigation";
-> 2 | import { useEffect, useState } from "react";
-    |          ^^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:45.055] Browser ERROR   ./src/containers/processing/index.tsx:1:10
-Ecmascript file had an error
-> 1 | import { useRouter } from "next/navigation";
-    |          ^^^^^^^^^
-  2 | import { useEffect, useState } from "react";
-  3 |
-  4 | const Processing = () => {
-
-You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:45.055] Browser ERROR   ./src/containers/processing/index.tsx:2:21
-Ecmascript file had an error
-  1 | import { useRouter } from "next/navigation";
-> 2 | import { useEffect, useState } from "react";
-    |                     ^^^^^^^^
-  3 |
-  4 | const Processing = () => {
-  5 |   const router = useRouter();
-
-You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:41:56.398] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'message')
-[00:41:56.587] Browser ERROR   uncaughtError: TypeError: undefined is not an object (evaluating 'router.query.message')
-[00:41:57.075] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:41:57.130] Server  LOG      ✓ Compiled in 2ms
-[00:41:57.148] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'message')
-[00:41:57.314] Browser ERROR   uncaughtError: TypeError: undefined is not an object (evaluating 'router.query.message')
-[00:42:07.690] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:42:07.754] Server  LOG      ✓ Compiled in 8ms
-[00:42:07.775] Server  ERROR    ⨯ ReferenceError: useRouter is not defined
-[00:42:07.949] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: useRouter
-[00:42:28.195] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:42:28.269] Server  LOG      ✓ Compiled in 2ms
-[00:42:28.288] Server  ERROR    ⨯ ReferenceError: useRouter is not defined
-[00:42:28.474] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: useRouter
-[00:42:35.575] Server  LOG      ✓ Compiled in 3ms
-[00:42:35.679] Browser ERROR   ./src/containers/processing/index.tsx:16:3
+[00:00:01.004] Server  LOG      ✓ Ready in 747ms
+[00:02:25.403] Browser ERROR   uncaughtError: TypeError: data.map is not a function. (In 'data.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.oid
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 57,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.value
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 58,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: new Date(item.timestamp).toLocaleString()
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, item._id, true, {
+                                fileName: "[project]/src/containers/smtp/index.tsx",
+                                lineNumber: 56,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0)))', 'data.map' is undefined)
+[00:02:42.362] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:02:42.407] Server  LOG      ✓ Compiled in 5ms
+[00:02:42.631] Browser LOG     Fetched SNMP data: {"data":[{"_id":"694bf3a094cbfd8412a8fccb","name":"sysLocation","oid":"1.3.6.1.2.1.1.6.0","timestamp":"2025-12-24T14:07:28.146Z","value":"Sitting on the Dock of the Bay"},{"_id":"694bf3a094cbfd8412a8fccd","name":"sysUpTime","oid":"1.3.6.1.2.1.1.3.0","timestamp":"2025-12-24T14:07:28.146Z","value":"4155"},{"_id":"694bf3a094cbfd8412a8fcc9","name":"sysName","oid":"1.3.6.1.2.1.1.5.0","timestamp":"2025-12-24T14:07:28.144Z","value":"be6c2305cf79"},{"_id":"694bf39694cbfd8412a8fcc5","name":"sysLocation","oid":"1.3.6.1.2.1.1.6.0","timestamp":"2025-12-24T14:07:18.141Z","value":"Sitting on the Dock of the Bay"},{"_id":"694bf39694cbfd8412a8fcc7","name":"sysUpTime","oid":"1.3.6.1.2.1.1.3.0","timestamp":"2025-12-24T14:07:18.141Z","value":"3155"},{"_id":"694bf39694cbfd8412a8fcc3","name":"sysName","oid":"1.3.6.1.2.1.1.5.0","timestamp":"2025-12-24T14:07:18.140Z","value":"be6c2305cf79"},{"_id":"694bf38c94cbfd8412a8fcbe","name":"sysLocation","oid":"1.3.6.1.2.1.1.6.0","timestamp":"2025-12-24T14:07:08.143Z","value":"Sitting on the Dock of the Bay"},{"_id":"694bf38c94cbfd8412a8fcc0","name":"sysUpTime","oid":"1.3.6.1.2.1.1.3.0","timestamp":"2025-12-24T14:07:08.143Z","value":"2155"},{"_id":"694bf38c94cbfd8412a8fcbc","name":"sysName","oid":"1.3.6.1.2.1.1.5.0","timestamp":"2025-12-24T14:07:08.142Z","value":"be6c2305cf79"},{"_id":"694bf38294cbfd8412a8fcba","name":"sysUpTime","oid":"1.3.6.1.2.1.1.3.0","timestamp":"2025-12-24T14:06:58.157Z","value":"1155"}]}
+[00:02:42.631] Browser ERROR   uncaughtError: TypeError: data.map is not a function. (In 'data.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.oid
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.value
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 60,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: new Date(item.timestamp).toLocaleString()
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 61,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, item._id, true, {
+                                fileName: "[project]/src/containers/smtp/index.tsx",
+                                lineNumber: 58,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0)))', 'data.map' is undefined)
+[00:02:45.454] Browser LOG     Fetched SNMP data: {"data":[{"_id":"694bf3a094cbfd8412a8fccb","name":"sysLocation","oid":"1.3.6.1.2.1.1.6.0","timestamp":"2025-12-24T14:07:28.146Z","value":"Sitting on the Dock of the Bay"},{"_id":"694bf3a094cbfd8412a8fccd","name":"sysUpTime","oid":"1.3.6.1.2.1.1.3.0","timestamp":"2025-12-24T14:07:28.146Z","value":"4155"},{"_id":"694bf3a094cbfd8412a8fcc9","name":"sysName","oid":"1.3.6.1.2.1.1.5.0","timestamp":"2025-12-24T14:07:28.144Z","value":"be6c2305cf79"},{"_id":"694bf39694cbfd8412a8fcc5","name":"sysLocation","oid":"1.3.6.1.2.1.1.6.0","timestamp":"2025-12-24T14:07:18.141Z","value":"Sitting on the Dock of the Bay"},{"_id":"694bf39694cbfd8412a8fcc7","name":"sysUpTime","oid":"1.3.6.1.2.1.1.3.0","timestamp":"2025-12-24T14:07:18.141Z","value":"3155"},{"_id":"694bf39694cbfd8412a8fcc3","name":"sysName","oid":"1.3.6.1.2.1.1.5.0","timestamp":"2025-12-24T14:07:18.140Z","value":"be6c2305cf79"},{"_id":"694bf38c94cbfd8412a8fcbe","name":"sysLocation","oid":"1.3.6.1.2.1.1.6.0","timestamp":"2025-12-24T14:07:08.143Z","value":"Sitting on the Dock of the Bay"},{"_id":"694bf38c94cbfd8412a8fcc0","name":"sysUpTime","oid":"1.3.6.1.2.1.1.3.0","timestamp":"2025-12-24T14:07:08.143Z","value":"2155"},{"_id":"694bf38c94cbfd8412a8fcbc","name":"sysName","oid":"1.3.6.1.2.1.1.5.0","timestamp":"2025-12-24T14:07:08.142Z","value":"be6c2305cf79"},{"_id":"694bf38294cbfd8412a8fcba","name":"sysUpTime","oid":"1.3.6.1.2.1.1.3.0","timestamp":"2025-12-24T14:06:58.157Z","value":"1155"}]}
+[00:02:45.454] Browser ERROR   uncaughtError: TypeError: data.map is not a function. (In 'data.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.oid
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.value
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 60,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: new Date(item.timestamp).toLocaleString()
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 61,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, item._id, true, {
+                                fileName: "[project]/src/containers/smtp/index.tsx",
+                                lineNumber: 58,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0)))', 'data.map' is undefined)
+[00:03:09.061] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:09.112] Server  LOG      ✓ Compiled in 5ms
+[00:03:09.336] Browser ERROR   uncaughtError: TypeError: data.map is not a function. (In 'data.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.oid
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 58,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.value
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: new Date(item.timestamp).toLocaleString()
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 60,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, item._id, true, {
+                                fileName: "[project]/src/containers/smtp/index.tsx",
+                                lineNumber: 57,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0)))', 'data.map' is undefined)
+[00:03:16.369] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:16.430] Server  LOG      ✓ Compiled in 4ms
+[00:03:16.629] Browser ERROR   uncaughtError: TypeError: data?.map is not a function. (In 'data?.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.oid
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 58,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.value
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: new Date(item.timestamp).toLocaleString()
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 60,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, item._id, true, {
+                                fileName: "[project]/src/containers/smtp/index.tsx",
+                                lineNumber: 57,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0)))', 'data?.map' is undefined)
+[00:03:17.646] Browser ERROR   uncaughtError: TypeError: data?.map is not a function. (In 'data?.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.oid
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 58,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: item.value
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                        children: new Date(item.timestamp).toLocaleString()
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/containers/smtp/index.tsx",
+                                        lineNumber: 60,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, item._id, true, {
+                                fileName: "[project]/src/containers/smtp/index.tsx",
+                                lineNumber: 57,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0)))', 'data?.map' is undefined)
+[00:03:43.574] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:43.632] Server  LOG      ✓ Compiled in 3ms
+[00:04:47.138] Server  LOG      ✓ Compiled in 4ms
+[00:05:16.334] Server  LOG      ✓ Compiled in 4ms
+[00:05:19.187] Server  LOG      ✓ Compiled in 5ms
+[00:05:19.291] Browser ERROR   ./src/containers/smtp/index.tsx:105:26
 Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
+  103 |         <table className="table table-striped table-bordered">
+  104 |           <thead className="table-dark">
+> 105 |             <tr>Name</th>
+      |                          ^
+> 106 |               <th>OID</th>
+      | ^^^^^^^^^^^^^^^
+  107 |               <th>Value</th>
+  108 |               <th>Timestamp</th>
+  109 |             </tr>
 
-Expected ',', got 'return'
+Expected '</', got 'jsx text (
+              )'
 
 Import trace:
   Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:42:38.011] Server  ERROR    ⨯ ./src/containers/processing/index.tsx:16:3
+    ./src/containers/smtp/index.tsx
+    ./src/app/smtp/page.tsx
+[00:05:20.612] Browser ERROR   ./src/containers/smtp/index.tsx:105:26
 Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
+  103 |         <table className="table table-striped table-bordered">
+  104 |           <thead className="table-dark">
+> 105 |             <tr>Name</th>
+      |                          ^
+> 106 |               <th>OID</th>
+      | ^^^^^^^^^^^^^^^
+  107 |               <th>Value</th>
+  108 |               <th>Timestamp</th>
+  109 |             </tr>
 
-Expected ',', got 'return'
+Expected '</', got 'jsx text (
+              )'
 
 Import trace:
   Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:42:38.077] Browser ERROR   uncaughtError: Error: ./src/containers/processing/index.tsx:16:3
+    ./src/containers/smtp/index.tsx
+    ./src/app/smtp/page.tsx
+[00:05:21.322] Server  ERROR    ⨯ ./src/containers/smtp/index.tsx:105:26
 Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
+  103 |         <table className="table table-striped table-bordered">
+  104 |           <thead className="table-dark">
+> 105 |             <tr>Name</th>
+      |                          ^
+> 106 |               <th>OID</th>
+      | ^^^^^^^^^^^^^^^
+  107 |               <th>Value</th>
+  108 |               <th>Timestamp</th>
+  109 |             </tr>
 
-Expected ',', got 'return'
+Expected '</', got 'jsx text (
+              )'
 
 Import trace:
   Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
+    ./src/containers/smtp/index.tsx
+    ./src/app/smtp/page.tsx
 
 
-[00:42:38.222] Browser ERROR   ./src/containers/processing/index.tsx:16:3
+[00:05:21.445] Browser ERROR   ./src/containers/smtp/index.tsx:105:26
 Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
+  103 |         <table className="table table-striped table-bordered">
+  104 |           <thead className="table-dark">
+> 105 |             <tr>Name</th>
+      |                          ^
+> 106 |               <th>OID</th>
+      | ^^^^^^^^^^^^^^^
+  107 |               <th>Value</th>
+  108 |               <th>Timestamp</th>
+  109 |             </tr>
 
-Expected ',', got 'return'
+Expected '</', got 'jsx text (
+              )'
 
 Import trace:
   Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:42:38.222] Browser ERROR   ./src/containers/processing/index.tsx:16:3
+    ./src/containers/smtp/index.tsx
+    ./src/app/smtp/page.tsx
+[00:05:21.741] Browser ERROR   ./src/containers/smtp/index.tsx:105:26
 Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
+  103 |         <table className="table table-striped table-bordered">
+  104 |           <thead className="table-dark">
+> 105 |             <tr>Name</th>
+      |                          ^
+> 106 |               <th>OID</th>
+      | ^^^^^^^^^^^^^^^
+  107 |               <th>Value</th>
+  108 |               <th>Timestamp</th>
+  109 |             </tr>
 
-Expected ',', got 'return'
+Expected '</', got 'jsx text (
+              )'
 
 Import trace:
   Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:42:40.183] Server  ERROR    ⨯ ./src/containers/processing/index.tsx:16:3
+    ./src/containers/smtp/index.tsx
+    ./src/app/smtp/page.tsx
+[00:05:22.049] Browser ERROR   ./src/containers/smtp/index.tsx:105:26
 Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
+  103 |         <table className="table table-striped table-bordered">
+  104 |           <thead className="table-dark">
+> 105 |             <tr>Name</th>
+      |                          ^
+> 106 |               <th>OID</th>
+      | ^^^^^^^^^^^^^^^
+  107 |               <th>Value</th>
+  108 |               <th>Timestamp</th>
+  109 |             </tr>
 
-Expected ',', got 'return'
+Expected '</', got 'jsx text (
+              )'
 
 Import trace:
   Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:42:40.228] Browser ERROR   uncaughtError: Error: ./src/containers/processing/index.tsx:16:3
+    ./src/containers/smtp/index.tsx
+    ./src/app/smtp/page.tsx
+[00:05:22.049] Browser ERROR   uncaughtError: Error: ./src/containers/smtp/index.tsx:105:26
 Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
+  103 |         <table className="table table-striped table-bordered">
+  104 |           <thead className="table-dark">
+> 105 |             <tr>Name</th>
+      |                          ^
+> 106 |               <th>OID</th>
+      | ^^^^^^^^^^^^^^^
+  107 |               <th>Value</th>
+  108 |               <th>Timestamp</th>
+  109 |             </tr>
 
-Expected ',', got 'return'
+Expected '</', got 'jsx text (
+              )'
 
 Import trace:
   Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
+    ./src/containers/smtp/index.tsx
+    ./src/app/smtp/page.tsx
 
 
-[00:42:40.366] Browser ERROR   ./src/containers/processing/index.tsx:16:3
+[00:05:22.049] Browser ERROR   ./src/containers/smtp/index.tsx:105:26
 Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
+  103 |         <table className="table table-striped table-bordered">
+  104 |           <thead className="table-dark">
+> 105 |             <tr>Name</th>
+      |                          ^
+> 106 |               <th>OID</th>
+      | ^^^^^^^^^^^^^^^
+  107 |               <th>Value</th>
+  108 |               <th>Timestamp</th>
+  109 |             </tr>
 
-Expected ',', got 'return'
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:42:40.366] Browser ERROR   ./src/containers/processing/index.tsx:16:3
-Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
-
-Expected ',', got 'return'
+Expected '</', got 'jsx text (
+              )'
 
 Import trace:
   Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:42:40.721] Server  ERROR    ⨯ ./src/containers/processing/index.tsx:16:3
-Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
-
-Expected ',', got 'return'
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:42:40.768] Browser ERROR   uncaughtError: Error: ./src/containers/processing/index.tsx:16:3
-Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
-
-Expected ',', got 'return'
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:42:40.903] Browser ERROR   ./src/containers/processing/index.tsx:16:3
-Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
-
-Expected ',', got 'return'
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:42:40.903] Browser ERROR   ./src/containers/processing/index.tsx:16:3
-Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
-
-Expected ',', got 'return'
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:42:41.021] Server  ERROR    ⨯ ./src/containers/processing/index.tsx:16:3
-Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
-
-Expected ',', got 'return'
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:42:41.077] Browser ERROR   uncaughtError: Error: ./src/containers/processing/index.tsx:16:3
-Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
-
-Expected ',', got 'return'
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-
-
-[00:42:41.211] Browser ERROR   ./src/containers/processing/index.tsx:16:3
-Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
-
-Expected ',', got 'return'
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:42:41.211] Browser ERROR   ./src/containers/processing/index.tsx:16:3
-Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
-
-Expected ',', got 'return'
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:43:02.915] Browser ERROR   ./src/containers/processing/index.tsx:16:3
-Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
-
-Expected ',', got 'return'
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:43:05.768] Browser ERROR   ./src/containers/processing/index.tsx:16:3
-Parsing ecmascript source code failed
-  14 |     }
-  15 |   }, [searchParams
-> 16 |   return (
-     |   ^^^^^^
-  17 |     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-  18 |       <div
-  19 |         className="card shadow-lg"
-
-Expected ',', got 'return'
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:43:08.664] Server  ERROR    ⨯ ReferenceError: useSearchParams is not defined
-[00:43:08.834] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: useSearchParams
-[00:43:10.578] Server  ERROR    ⨯ ReferenceError: useSearchParams is not defined
-[00:43:10.740] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: useSearchParams
-[00:43:11.607] Server  ERROR    ⨯ ReferenceError: useSearchParams is not defined
-[00:43:11.783] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: useSearchParams
-[00:43:11.911] Server  ERROR    ⨯ ReferenceError: useSearchParams is not defined
-[00:43:12.077] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: useSearchParams
-[00:43:19.912] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:43:19.978] Server  LOG      ✓ Compiled in 10ms
-[00:43:46.044] Server  LOG      ✓ Compiled in 5ms
-[00:43:47.549] Server  LOG      ✓ Compiled in 1ms
-[00:47:31.077] Server  LOG      ✓ Compiled in 23ms
-[00:47:31.211] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: message
-[00:47:33.642] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:47:33.668] Server  LOG      ✓ Compiled in 1ms
-[00:47:33.685] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: message
-[00:47:33.768] Server  ERROR    ⨯ ReferenceError: message is not defined
-[00:47:34.536] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: message
-[00:47:36.344] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:47:36.407] Server  LOG      ✓ Compiled in 2ms
-[00:51:20.389] Server  LOG      ✓ Compiled in 4ms
-[00:51:42.087] Server  LOG      ✓ Compiled in 2ms
-[00:51:49.301] Server  LOG      ✓ Compiled in 2ms
-[00:51:50.900] Server  LOG      ✓ Compiled in 2ms
-[00:52:00.279] Server  LOG      ✓ Compiled in 16ms
-[00:52:00.326] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
-
-If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true center center true center
-[00:52:06.958] Server  LOG      ✓ Compiled in 1ms
-[00:52:19.283] Server  LOG      ✓ Compiled in 2ms
-[00:52:30.084] Server  LOG      ✓ Compiled in 2ms
-[00:52:40.174] Server  LOG      ✓ Compiled in 3ms
-[00:52:40.281] Browser ERROR   ./src/containers/processing/index.tsx:31:20
-Parsing ecmascript source code failed
-  29 |             </div>
-  30 |           </div>
-> 31 |           <p style="text-aling: center}>
-     |                    ^^^^^^^^^^^^^^^^^^^^^
-> 32 |             Daca dupa o perioada indelungata nu se afiseaza rezultatul, va rugam
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 33 |             sa reincarcati pagina.
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 34 |           </p>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 35 |         </div>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 36 |       </div>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 37 |     </div>
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 38 |   );
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 39 | };
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 40 |
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 41 | export default Processing;
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 42 |
-     | ^
-
-Unterminated string constant
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:52:42.470] Server  LOG      ✓ Compiled in 1ms
-[00:52:42.572] Browser ERROR   ./src/containers/processing/index.tsx:31:40
-Parsing ecmascript source code failed
-  29 |             </div>
-  30 |           </div>
-> 31 |           <p style="text-aling: center"}>
-     |                                        ^
-  32 |             Daca dupa o perioada indelungata nu se afiseaza rezultatul, va rugam
-  33 |             sa reincarcati pagina.
-  34 |           </p>
-
-Expected '</', got '}'
-
-Import trace:
-  Server Component:
-    ./src/containers/processing/index.tsx
-    ./src/app/procesare/rezultat/page.tsx
-[00:53:21.690] Server  LOG      ✓ Compiled in 2ms
-[00:53:48.628] Server  LOG      ✓ Compiled in 7ms
-[00:53:56.345] Server  LOG      ✓ Compiled in 2ms
-[00:54:23.126] Server  LOG      ✓ Compiled in 7ms
-[00:54:30.630] Server  LOG      ✓ Compiled in 1ms
-[00:54:39.790] Server  LOG      ✓ Compiled in 2ms
-[00:54:42.531] Server  LOG      ✓ Compiled in 2ms
-[00:54:51.800] Server  LOG      ✓ Compiled in 2ms
-[00:55:08.994] Server  LOG      ✓ Compiled in 2ms
-[00:55:16.774] Browser LOG     Verificare status procesare...
-[00:55:21.772] Browser LOG     Verificare status procesare...
-[00:55:26.774] Browser LOG     Verificare status procesare...
-[00:55:31.774] Browser LOG     Verificare status procesare...
-[00:55:36.775] Browser LOG     Verificare status procesare...
-[00:55:41.775] Browser LOG     Verificare status procesare...
-[00:55:42.456] Server  LOG      ✓ Compiled in 8ms
-[00:55:46.775] Browser LOG     Verificare status procesare...
-[00:55:50.921] Server  LOG      ✓ Compiled in 6ms
-[00:55:51.776] Browser LOG     Verificare status procesare...
-[00:55:56.776] Browser LOG     Verificare status procesare...
-[00:56:01.778] Browser LOG     Verificare status procesare...
-[00:56:06.779] Browser LOG     Verificare status procesare...
-[00:56:11.777] Browser LOG     Verificare status procesare...
-[00:56:16.779] Browser LOG     Verificare status procesare...
-[00:56:21.780] Browser LOG     Verificare status procesare...
-[00:56:26.781] Browser LOG     Verificare status procesare...
-[00:56:33.068] Browser LOG     Verificare status procesare...
-[00:56:38.502] Browser LOG     Verificare status procesare...
-[00:56:49.221] Browser LOG     Verificare status procesare...
-[00:57:14.767] Server  LOG      ✓ Compiled in 3ms
-[00:57:34.648] Browser LOG     Verificare status procesare...
-[00:57:34.648] Browser LOG     Verificare status procesare...
-[00:57:38.825] Browser LOG     Verificare status procesare...
-[00:57:43.825] Browser LOG     Verificare status procesare...
-[00:57:44.100] Server  LOG      ✓ Compiled in 3ms
-[00:59:01.701] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:59:24.162] Server  LOG      ✓ Compiled in 2ms
-[00:59:25.365] Server  LOG      ✓ Compiled in 2ms
-[00:59:31.240] Server  LOG      ✓ Compiled in 2ms
-[01:00:07.926] Server  LOG      ✓ Compiled in 3ms
-[01:00:14.665] Server  LOG      ✓ Compiled in 2ms
-[01:00:50.894] Server  LOG      ✓ Compiled in 2ms
-[01:01:01.856] Browser LOG     Verificare status procesare...
-[01:01:06.856] Browser LOG     Verificare status procesare...
-[01:01:11.857] Browser LOG     Verificare status procesare...
-[01:01:16.857] Browser LOG     Verificare status procesare...
-[01:01:21.857] Browser LOG     Verificare status procesare...
-[01:01:26.857] Browser LOG     Verificare status procesare...
-[01:01:31.857] Browser LOG     Verificare status procesare...
-[01:01:36.858] Browser LOG     Verificare status procesare...
-[01:01:46.203] Browser LOG     Verificare status procesare...
-[01:01:51.203] Browser LOG     Verificare status procesare...
-[01:01:56.204] Browser LOG     Verificare status procesare...
-[01:02:01.209] Browser LOG     Verificare status procesare...
-[01:02:06.207] Browser LOG     Verificare status procesare...
-[01:02:11.207] Browser LOG     Verificare status procesare...
-[01:02:16.207] Browser LOG     Verificare status procesare...
-[01:02:21.207] Browser LOG     Verificare status procesare...
-[01:02:26.208] Browser LOG     Verificare status procesare...
-[01:02:31.461] Browser LOG     Verificare status procesare...
-[01:02:36.462] Browser LOG     Verificare status procesare...
-[01:02:41.462] Browser LOG     Verificare status procesare...
-[01:02:46.462] Browser LOG     Verificare status procesare...
-[01:02:51.462] Browser LOG     Verificare status procesare...
-[01:02:56.463] Browser LOG     Verificare status procesare...
-[01:03:01.464] Browser LOG     Verificare status procesare...
-[01:03:06.463] Browser LOG     Verificare status procesare...
-[01:03:11.463] Browser LOG     Verificare status procesare...
-[01:03:16.464] Browser LOG     Verificare status procesare...
-[01:03:21.465] Browser LOG     Verificare status procesare...
-[01:03:26.464] Browser LOG     Verificare status procesare...
-[01:03:33.251] Browser LOG     Verificare status procesare...
-[01:03:40.405] Browser LOG     Verificare status procesare...
-[01:04:57.212] Browser LOG     Verificare status procesare...
-[01:04:57.212] Browser LOG     Verificare status procesare...
-[01:04:57.212] Browser LOG     Verificare status procesare...
-[01:04:57.212] Browser LOG     Verificare status procesare...
-[01:04:57.212] Browser LOG     Verificare status procesare...
-[01:05:29.487] Browser LOG     Verificare status procesare...
-[01:05:40.004] Browser LOG     Verificare status procesare...
-[01:05:45.005] Browser LOG     Verificare status procesare...
-[01:05:50.007] Browser LOG     Verificare status procesare...
-[01:05:55.008] Browser LOG     Verificare status procesare...
-[01:06:00.007] Browser LOG     Verificare status procesare...
-[01:06:05.009] Browser LOG     Verificare status procesare...
-[01:06:10.009] Browser LOG     Verificare status procesare...
-[01:06:15.010] Browser LOG     Verificare status procesare...
-[01:06:20.011] Browser LOG     Verificare status procesare...
-[01:06:25.012] Browser LOG     Verificare status procesare...
-[01:06:30.563] Browser LOG     Verificare status procesare...
-[01:06:39.982] Browser LOG     Verificare status procesare...
-[01:08:35.967] Browser LOG     Verificare status procesare...
-[01:08:35.967] Browser LOG     Verificare status procesare...
-[01:08:35.967] Browser LOG     Verificare status procesare...
-[01:08:35.967] Browser LOG     Verificare status procesare...
-[01:08:35.967] Browser LOG     Verificare status procesare...
-[01:08:36.069] Browser LOG     Verificare status procesare...
-[01:08:50.114] Browser LOG     Verificare status procesare...
-[01:08:55.113] Browser LOG     Verificare status procesare...
-[01:09:00.113] Browser LOG     Verificare status procesare...
-[01:09:05.115] Browser LOG     Verificare status procesare...
-[01:09:10.115] Browser LOG     Verificare status procesare...
-[01:09:15.117] Browser LOG     Verificare status procesare...
-[01:09:20.118] Browser LOG     Verificare status procesare...
-[01:09:25.119] Browser LOG     Verificare status procesare...
-[01:09:30.119] Browser LOG     Verificare status procesare...
-[01:09:35.120] Browser LOG     Verificare status procesare...
-[01:09:40.121] Browser LOG     Verificare status procesare...
-[01:09:45.122] Browser LOG     Verificare status procesare...
-[01:09:50.123] Browser LOG     Verificare status procesare...
-[01:09:55.124] Browser LOG     Verificare status procesare...
-[01:10:00.125] Browser LOG     Verificare status procesare...
-[01:10:05.126] Browser LOG     Verificare status procesare...
-[01:10:10.127] Browser LOG     Verificare status procesare...
-[01:10:15.127] Browser LOG     Verificare status procesare...
-[01:10:20.129] Browser LOG     Verificare status procesare...
-[01:10:25.129] Browser LOG     Verificare status procesare...
-[01:10:30.131] Browser LOG     Verificare status procesare...
-[01:10:35.131] Browser LOG     Verificare status procesare...
-[01:10:40.130] Browser LOG     Verificare status procesare...
-[01:10:45.131] Browser LOG     Verificare status procesare...
-[01:10:50.132] Browser LOG     Verificare status procesare...
-[01:10:55.132] Browser LOG     Verificare status procesare...
-[01:11:00.134] Browser LOG     Verificare status procesare...
-[01:11:05.132] Browser LOG     Verificare status procesare...
-[01:11:10.133] Browser LOG     Verificare status procesare...
-[01:11:15.134] Browser LOG     Verificare status procesare...
-[01:11:20.134] Browser LOG     Verificare status procesare...
-[01:11:25.134] Browser LOG     Verificare status procesare...
-[01:11:30.134] Browser LOG     Verificare status procesare...
-[01:11:35.135] Browser LOG     Verificare status procesare...
-[01:11:40.135] Browser LOG     Verificare status procesare...
-[01:11:45.135] Browser LOG     Verificare status procesare...
-[01:11:50.135] Browser LOG     Verificare status procesare...
-[01:11:55.136] Browser LOG     Verificare status procesare...
-[01:12:00.135] Browser LOG     Verificare status procesare...
-[01:12:05.136] Browser LOG     Verificare status procesare...
-[01:12:10.137] Browser LOG     Verificare status procesare...
-[01:12:15.137] Browser LOG     Verificare status procesare...
-[01:12:20.137] Browser LOG     Verificare status procesare...
-[01:12:25.137] Browser LOG     Verificare status procesare...
-[01:12:30.902] Browser LOG     Verificare status procesare...
-[01:12:36.520] Browser LOG     Verificare status procesare...
-[01:12:46.529] Browser LOG     Verificare status procesare...
+    ./src/containers/smtp/index.tsx
+    ./src/app/smtp/page.tsx
+[00:07:33.074] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
