@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../src/app/smtp/page.tsx"],"sourcesContent":["export default function SMTP() {\n  return <div>SMTP Page</div>;\n}\n"],"names":[],"mappings":"qVAAe,SAAS,IACtB,MAAO,CAAA,EAAA,EAAA,GAAA,EAAC,MAAA,UAAI,aACd"}

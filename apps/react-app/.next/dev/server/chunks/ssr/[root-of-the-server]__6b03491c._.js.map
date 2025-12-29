@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/valentin/Documents/stuffs/master-ase/Dezvoltarea%20aplicat%CC%A7iilor%20distribuite%20s%CC%A6i%20Cloud/proiect/apps/react-app/src/containers/smtp/index.tsx"],"sourcesContent":["const SMTP = () => {\n  return <div>SMTP Page</div>;\n};\n\nexport default SMTP;\n"],"names":[],"mappings":";;;;;;AAAA,MAAM,OAAO;IACX,qBAAO,8OAAC;kBAAI;;;;;;AACd;uCAEe"}},
-    {"offset": {"line": 38, "column": 0}, "map": {"version":3,"sources":["file:///Users/valentin/Documents/stuffs/master-ase/Dezvoltarea%20aplicat%CC%A7iilor%20distribuite%20s%CC%A6i%20Cloud/proiect/apps/react-app/src/app/smtp/page.tsx"],"sourcesContent":["import SMTP from \"@/containers/smtp\";\n\nexport default function SMTPPage() {\n  return <SMTP />;\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBAAO,8OAAC,8IAAI;;;;;AACd"}}]
-}

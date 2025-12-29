@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/valentin/Documents/stuffs/master-ase/Dezvoltarea%20aplicat%CC%A7iilor%20distribuite%20s%CC%A6i%20Cloud/proiect/apps/react-app/src/app/layout.tsx"],"sourcesContent":["import \"bootstrap/dist/css/bootstrap.min.css\";\nimport \"./globals.css\";\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <html lang=\"ro\">\n      <body className=\"bg-light\">{children}</body>\n    </html>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;AAGe,SAAS,WAAW,EACjC,QAAQ,EAGR;IACA,qBACE,8OAAC;QAAK,MAAK;kBACT,cAAA,8OAAC;YAAK,WAAU;sBAAY;;;;;;;;;;;AAGlC"}},
-    {"offset": {"line": 33, "column": 0}, "map": {"version":3,"sources":["file:///Users/valentin/Documents/stuffs/master-ase/Dezvoltarea%20aplicat%CC%A7iilor%20distribuite%20s%CC%A6i%20Cloud/proiect/apps/react-app/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
-}
