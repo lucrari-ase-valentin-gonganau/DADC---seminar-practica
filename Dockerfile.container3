@@ -1,0 +1,24 @@
+# Container 3: TomEE Plume - MDB Consumer with RMI Client
+FROM critoma/amd64_u24_noble_ism_security:latest
+
+ENV JAVA_HOME=/opt/software/java/jdks/jdk-25.0.1
+ENV TOMEE_HOME=/opt/software/apache-tomee-plume-10.0.0-M3
+ENV PATH="$JAVA_HOME/bin:$TOMEE_HOME/bin:$PATH"
+
+USER stud
+WORKDIR /home/stud/app
+
+# Copy Consumer application (MDB)
+COPY --chown=stud:stud apps/JavaEE/Consumer/. .
+
+# Build the Consumer application
+# If using Maven:
+# RUN mvn clean package
+# Copy the built artifact to TomEE webapps
+# RUN cp target/*.war $TOMEE_HOME/webapps/
+
+# Expose TomEE port
+EXPOSE 8080
+
+# Start TomEE
+CMD ["catalina.sh", "run"]

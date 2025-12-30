@@ -15,6 +15,7 @@ import java.nio.file.*;
 import javax.jms.*;
 
 import org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory;
+import org.jgroups.util.UUID;
 
 public class App {
 	static final long MAX_FILE_SIZE = 5L * 1024 * 1024 * 1024; // 5 GB
@@ -41,6 +42,33 @@ public class App {
 		app.get("/", ctx -> ctx.result("Javalin REST + JSM Publisher  is running"));
 		
 		app.post("/upload-and-process",  ctx -> App.upload(ctx));
+		
+		app.ws("/ws/notifications", ws -> Websocket.notifications(ws));
+		
+		app.post("/notify/image/status", ctx -> App.updateStatusImage(ctx));
+
+	}
+	
+	
+	protected static void updateStatusImage(Context ctx) {
+	
+		
+		String uploadId = ctx.formParam("uploadId");
+		String idInserted = ctx.formParam("idInserted");
+		
+		if(uploadId == null || idInserted == null) {
+			ctx.status(400).result("uploadId and idInserted is required!");
+			return ;
+		}
+		
+		
+		// convert string to long 
+		long rowId = Long.parseLong(idInserted);
+		
+		
+		Websocket.alertUserThatImageIsReady(uploadId, rowId);
+		
+		
 	}
 	
 	protected static void upload(Context ctx) {
@@ -55,6 +83,8 @@ public class App {
 		String originalFilename = uploadFile.filename();
 		String prefix = "upload-";
 		String suffix = "";
+		
+		String uploadId = UUID.randomUUID().toString();
 		
 		// extragem extensia
 		if (originalFilename != null && originalFilename.contains(".")) {
@@ -84,10 +114,10 @@ public class App {
 		int width = Integer.parseInt(ctx.formParam("width"));
 		int height = Integer.parseInt(ctx.formParam("height"));
 
-		App.sendToBroker(tempFile, x, y, width, height);
- 
+		App.sendToBroker(tempFile, x, y, width, height, uploadId);
 
-		ctx.result("File received:" + tempFile + " and it was sent to broker to be processed!");
+		
+		ctx.result(uploadId);
 		
 		} catch (NumberFormatException e) {
 			ctx.status(400).result("x, y, width and height are mandatory and must be numeric");	
@@ -96,7 +126,7 @@ public class App {
 	}
 	
 	
-	protected static void sendToBroker(Path tempFile, int x, int y, int w, int h) {
+	protected static void sendToBroker(Path tempFile, int x, int y, int w, int h, String uploadId) {
 		try { 
 			Session session = conn.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
@@ -113,11 +143,12 @@ public class App {
 				message.writeBytes(buffer, 0, read);
 			}
 			
-			
 			message.setIntProperty("x", x);
 			message.setIntProperty("y", y);
 			message.setIntProperty("w", w);
 			message.setIntProperty("h", h);
+			
+			message.setStringProperty("uploadId", uploadId); // for tracking
 			
 			producer.setDeliveryMode(DeliveryMode.PERSISTENT);
 			producer.send(message);

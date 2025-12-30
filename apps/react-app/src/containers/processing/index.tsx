@@ -1,28 +1,18 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Suspense } from "react";
+import { useWebSocket } from "../../../hooks/useWebSocket";
 
-const Processing = () => {
-  const [countChecking, setCountChecking] = useState(0);
+const ProcessingContent = () => {
   const searchParams = useSearchParams();
-  const messageParam = searchParams.get("message");
+  const uploadIdParam = searchParams.get("uploadId");
 
-  const checkProcessingStatus = () => {
-    setCountChecking((prev) => prev + 1);
-    console.log("Verificare status procesare...");
-    // Implement API call to check processing status
-  };
-
-  useEffect(() => {
-    // Here you can implement logic to poll the backend for processing status
-    // For demonstration, we will just log to console
-    const interval = setInterval(() => {
-      checkProcessingStatus();
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
+  const { isConnected, lastMessage } = useWebSocket(
+    `${
+      process.env.BASE_PATH_URL_WEBSOCKET || "ws://localhost:8081"
+    }/ws/notifications`
+  );
 
   return (
     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
@@ -34,29 +24,63 @@ const Processing = () => {
           <h2 className="mb-0">Check result</h2>
         </div>
         <div className="card-body p-4">
-          {messageParam && (
+          {uploadIdParam && (
             <div className="alert alert-info" role="alert">
-              <i className="bi bi-info-circle me-2"></i>
-              {messageParam}
+              <i className="bi bi-info-circle me-2"></i>UploadId:{" "}
+              {uploadIdParam}
             </div>
           )}
+          {isConnected ? (
+            <>
+              <div className="alert alert-success" role="alert">
+                <i className="bi bi-check-circle me-2"></i>WebSocket connected.
+              </div>
 
-          <div className="d-flex justify-content-center my-4">
-            <div className="spinner-border text-primary" role="status">
-              <span className="visually-hidden">Loading...</span>
+              {lastMessage &&
+              lastMessage.data ===
+                `Processing complete for uploadId: ${uploadIdParam}` ? (
+                <div className="alert alert-success" role="alert">
+                  <i className="bi bi-check-circle me-2"></i>
+                  Processing complete! You can now view the result.
+                </div>
+              ) : (
+                <>
+                  <div className="alert alert-warning" role="alert">
+                    <i className="bi bi-exclamation-triangle me-2"></i>
+                    Processing not yet complete. Please wait...
+                  </div>
+                  <div className="d-flex justify-content-center my-4">
+                    <div className="spinner-border text-primary" role="status">
+                      <span className="visually-hidden">Loading...</span>
+                    </div>
+                  </div>
+                </>
+              )}
+            </>
+          ) : (
+            <div className="alert alert-danger" role="alert">
+              <i className="bi bi-x-circle me-2"></i>WebSocket disconnected.
             </div>
-          </div>
-          <p style={{ textAlign: "center" }}>
-            If after a long period of time the result is not displayed, please
-            reload the page.
-            <br />
-            <br />
-            Numbers of calls to api to check if the image was processed:{" "}
-            {countChecking}
-          </p>
+          )}
         </div>
       </div>
     </div>
+  );
+};
+
+const Processing = () => {
+  return (
+    <Suspense
+      fallback={
+        <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+          <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      }
+    >
+      <ProcessingContent />
+    </Suspense>
   );
 };
 

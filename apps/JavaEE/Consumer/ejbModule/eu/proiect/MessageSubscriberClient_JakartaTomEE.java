@@ -20,7 +20,6 @@ import javax.jms.TopicConnection;
 import javax.jms.TopicConnectionFactory; 
 import javax.jms.TopicSession;         
 import javax.jms.TopicSubscriber;     
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 
@@ -41,9 +40,6 @@ public static void main(String[] args) {
 	
 	TopicSubscriber topicSubscriber = null;
 	ImageListener topicListener = null;
-	
-	InputStreamReader inputStreamReader = null;
-	char answer = '\0';
 	
 	System.out.println("Topic name = "+topicName);
 		
@@ -75,17 +71,15 @@ public static void main(String[] args) {
 		topicSubscriber.setMessageListener((MessageListener) topicListener);
 		topicConnection.start();
 			
-		System.out.println("To end program, insert q + CR/LF");
-		inputStreamReader = new InputStreamReader(System.in);
-		while(!(answer == 'q')) {
-			try {
-				answer = (char) inputStreamReader.read();
-			} catch(IOException ioe) {
-				ioe.printStackTrace();
-			}
-		}
+		System.out.println("Press CTR+C to exit.");
+		Thread.currentThread().join();
+		
+		
 		} catch(JMSException jmse) {
 			jmse.printStackTrace();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		} finally {
 			if(topicConnection != null) {
 				try {

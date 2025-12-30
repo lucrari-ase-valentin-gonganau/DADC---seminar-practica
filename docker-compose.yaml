@@ -1,127 +1,28 @@
 services:
-  artemis:
+  container1:
+    build:
+      context: .
+      dockerfile: Dockerfile.container1
+    container_name: container1
+    ports:
+      - "8081:8081" # javalin app port
+      - "8082:8082" # websocket
+    networks:
+      - dad_network
+    restart: unless-stopped
+
+  container2:
     image: apache/activemq-artemis:latest
-    container_name: artemis-broker
+    container_name: container2-JMS-Topic-artemis
     environment:
       ARTEMIS_USER: admin
       ARTEMIS_PASSWORD: admin
     ports:
       - "61616:61616"
       - "8161:8161"
-    # volumes:
-    #   - artemis-data:/var/lib/artemis
     networks:
       - dad_network
     restart: unless-stopped
-
-  mongo:
-    image: mongo:7.0
-    container_name: mongo
-    ports:
-      - "27017:27017"
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: stud
-      MONGO_INITDB_ROOT_PASSWORD: stud123
-      MONGO_INITDB_DATABASE: snmpdb
-    volumes:
-      - ./data/mongo:/data/db
-    networks:
-      - dad_network
-    restart: unless-stopped
-  mysql:
-    image: mysql:8.0
-    container_name: mysql
-    restart: unless-stopped
-    volumes:
-      - ./data/mysql:/var/lib/mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: stud123
-      MYSQL_DATABASE: blobstore
-      MYSQL_USER: stud
-      MYSQL_PASSWORD: stud123
-    networks:
-      - dad_network
-    ports:
-      - "3306:3306"
-
-  snmp_agent:
-    build:
-      context: .
-      dockerfile: Dockerfile.snmp
-    container_name: snmp_agent
-    ports:
-      - "161:161/udp"
-    networks:
-      - dad_network
-    restart: unless-stopped
-
-  java_javalin:
-    build:
-      context: .
-      dockerfile: Dockerfile.javalin
-    container_name: java_javalin_app
-    # amd 64 pentru a rula pe macos cu m1/m2
-    platform: linux/amd64
-    environment:
-      - BROKER_URL=tcp://artemis:61616
-      - BROKER_USER=admin
-      - BROKER_PASSWORD=admin
-    ports:
-      # este folosit de macos acest port, asa ca mapez 8081
-      - "8081:8081"
-    networks:
-      - dad_network
-    restart: unless-stopped
-    depends_on:
-      - artemis
-
-  # java_ee:
-  #   environment:
-  #     - BROKER_URL=tcp://artemis:61616
-  #     - BROKER_USER=admin
-  #     - BROKER_PASSWORD=admin
-  #     - DB_URL=jdbc:mysql://localhost:3306/blobstore?useSSL=false
-  #     - DB_USER=stud
-  #     - DB_PASS=stud123
-  node-api:
-    build:
-      context: .
-      dockerfile: Dockerfile.node-api
-    container_name: node-api
-    ports:
-      - "8082:8082"
-    environment:
-      - NODE_ENV=production
-      - MONGO_URI=mongodb://stud:stud123@mongo:27017/snmpdb?authSource=admin
-      - DB_HOST=mysql
-      - DB_USER=stud
-      - DB_PASSWORD=stud123
-      - DB_NAME=blobstore
-      - SNMP_TARGET_IP=snmp_agent
-      - SNMP_COMMUNITY=public
-    restart: unless-stopped
-    networks:
-      - dad_network
-    depends_on:
-      - mongo
-      - mysql
-
-  react-app:
-    build:
-      context: .
-      dockerfile: Dockerfile.react
-    container_name: react-app
-    ports:
-      - "3000:3000"
-    environment:
-      - NODE_ENV=development
-      - BASE_PATH_URL_SNMP=http://localhost:8082
-      - BASE_PATH_URL_JAVALIN=http://localhost:8081
-    volumes:
-      - .:/apps/react-app
-      - /apps/react-app/node_modules
-    restart: unless-stopped
-
 networks:
   dad_network:
 # volumes:

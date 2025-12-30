@@ -16,6 +16,7 @@ class ImageListener implements MessageListener {
 	
     @Override
     public void onMessage(Message message) {
+
         byte[] imageData = null;
         
         try {
@@ -35,10 +36,12 @@ class ImageListener implements MessageListener {
                 int w = byteMsg.getIntProperty("w");
                 int h = byteMsg.getIntProperty("h");
                 
+                String uploadId = byteMsg.getStringProperty("uploadId");
+                
                 System.out.println("I received a binary message with the size of " + length + " bytes");
                 System.out.println("Cords zoom: (" + x + "," + y + ") -> (" + w + "," + h + ")");
 
-                processImageViaRMI(imageData, x, y, w, h);
+                processImageViaRMI(imageData, x, y, w, h, uploadId);
                 
                 
                
@@ -56,7 +59,7 @@ class ImageListener implements MessageListener {
     }
 
 
-    private void processImageViaRMI(byte[] imageBytes, int x, int y, int w, int h) throws IOException, SQLException {
+    private void processImageViaRMI(byte[] imageBytes, int x, int y, int w, int h, String uploadId) throws IOException, SQLException {
     	System.out.println("Loading image of " + imageBytes.length + " bytes for processing via RMI");
         
         int port = Integer.parseInt(System.getenv().getOrDefault("RMI_SERVER_PORT", RMI_SERVER_PORT));
@@ -67,7 +70,18 @@ class ImageListener implements MessageListener {
         	
         	ImageZoomProcessorInterface remote = (ImageZoomProcessorInterface) registry.lookup("ImageProcessorService");
         	
-        	String raspuns = remote.processIt(imageBytes, x, y, w, h);
+        	if(imageBytes == null || imageBytes.length == 0) {
+        		throw new IOException("Empty image received");
+        	}
+        	
+        	
+        	String raspuns = remote.processIt(imageBytes, x, y, w, h, uploadId);
+        	
+        	Boolean hasError = raspuns.toLowerCase().contains("error");
+        	if(!hasError) {
+        		Notification.notifyApp(uploadId, raspuns);
+        	}
+        	
         	System.out.println("The answer received from RMI SERVER: " + raspuns);
         	
         } catch (Exception e) {

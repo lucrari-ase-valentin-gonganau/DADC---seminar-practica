@@ -3,6 +3,7 @@ package eu.proiect;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class db {
@@ -12,7 +13,7 @@ public class db {
 		
 
 	
-	public static void saveAsBlob(byte[] imageOriginal, byte[] imageZoomed)  {
+	public static long saveAsBlob(byte[] imageOriginal, byte[] imageZoomed)  {
 		Connection conn;
 		try {
 			conn = db.getConnection();
@@ -34,12 +35,23 @@ public class db {
 
 		conn.close();
 		
+		try (ResultSet rs = ps.getGeneratedKeys()) {
+			if (rs.next()) {
+				long insertId = rs.getLong(1);
+				System.out.println("Inserted ID: " + insertId);
+				
+				return insertId;
+			}
+		}
+		
+		
+		
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		
+		return -1;
 	}
 	
 	

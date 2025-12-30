@@ -46,7 +46,7 @@ const UploadForm = () => {
     uploadImageAndProcessIt
       .post("/upload-and-process", form)
       .then((response) => {
-        window.location.href = "/upload/result?message=" + response.data;
+        window.location.href = "/upload/result?uploadId=" + response.data;
       })
       .catch((error) => {
         alert("Error sending the image. Check the console for details.");

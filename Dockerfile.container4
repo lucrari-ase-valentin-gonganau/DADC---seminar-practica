@@ -1,0 +1,28 @@
+# Container 4: Java RMI Server 1
+FROM critoma/amd64_u24_noble_ism_security:latest
+
+ENV JAVA_HOME=/opt/software/java/jdks/jdk-25.0.1
+ENV PATH="$JAVA_HOME/bin:$PATH"
+
+USER stud
+WORKDIR /home/stud/app
+
+# Copy RMI Server application
+COPY --chown=stud:stud apps/JavaEE/ServerRMI/. .
+
+# Build the RMI Server
+# If using Maven:
+# RUN mvn clean package
+
+# Compile Java RMI server (adjust paths as needed)
+RUN if [ -d "src" ]; then \
+    find src -name "*.java" > sources.txt && \
+    mkdir -p target/classes && \
+    javac -d target/classes @sources.txt; \
+    fi
+
+# Expose RMI registry port and service port
+EXPOSE 1099 1100
+
+# Start RMI Server (adjust main class as needed)
+CMD ["java", "-Djava.rmi.server.hostname=container4", "-cp", "target/classes", "ServerRMI"]

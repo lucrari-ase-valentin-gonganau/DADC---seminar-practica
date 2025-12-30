@@ -18,11 +18,13 @@ public class ServerRMIImage {
 			
 			registery.rebind("ImageProcessorService", ip);
 			
-			System.out.println("Server is on fire");
+			System.out.println("SERVER RMI");
 			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
+			
+
 		}
 		
 	}

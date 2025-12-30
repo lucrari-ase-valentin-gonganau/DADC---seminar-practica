@@ -1,0 +1,22 @@
+# Container 1: TomEE Plume - REST API Backend with JMS Publisher and WebSocket
+FROM critoma/amd64_u24_noble_ism_security:latest
+
+ENV JAVA_HOME=/opt/software/java/jdks/jdk-25.0.1
+ENV TOMEE_HOME=/opt/software/apache-tomee-plume-10.0.0-M3
+ENV PATH="$JAVA_HOME/bin:$TOMEE_HOME/bin:$PATH"
+
+USER stud
+WORKDIR /home/stud/app
+
+# Copy application source code
+COPY --chown=stud:stud apps/Javalin/. .
+
+RUN mkdir -p target/classes && \
+    javac -cp "target/dependency/*" -d target/classes src/main/java/eu/App.java
+
+EXPOSE 8081
+
+
+
+# CMD ["scriptcontainer1.sh", "run"]
+CMD ["java", "-cp", "target/classes:target/dependency/*", "eu.App"]
