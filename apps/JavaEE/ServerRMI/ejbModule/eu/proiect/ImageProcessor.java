@@ -65,7 +65,7 @@ public class ImageProcessor extends UnicastRemoteObject implements ImageZoomProc
 			
 			
 			// save to database
-			long idInserted = db.saveAsBlob(imageBytes, baos.toByteArray());
+			long idInserted = db.saveAsBlob(imageBytes, baos.toByteArray(), detectedFormat);
 			
 			return Long.toString(idInserted);
 			

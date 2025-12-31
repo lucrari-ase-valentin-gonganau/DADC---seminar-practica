@@ -9,5 +9,6 @@ export const dbMysql = await mysql.createConnection({
 });
 
 export const dbMongo = await mongoose.connect(
-  process.env.MONGO_URI || "mongodb://stud:stud123@localhost:27017/snmpdb?authSource=admin"
+  process.env.MONGO_URI ||
+    "mongodb://stud:stud123@localhost:27017/snmpdb?authSource=admin"
 );

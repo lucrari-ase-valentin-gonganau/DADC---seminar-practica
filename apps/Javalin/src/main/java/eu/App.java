@@ -56,6 +56,10 @@ public class App {
 		String uploadId = ctx.formParam("uploadId");
 		String idInserted = ctx.formParam("idInserted");
 		
+		
+		System.out.println("UploadId received: " + uploadId);
+		System.out.println("Id inserted in database received " + idInserted);
+		
 		if(uploadId == null || idInserted == null) {
 			ctx.status(400).result("uploadId and idInserted is required!");
 			return ;
@@ -65,10 +69,11 @@ public class App {
 		// convert string to long 
 		long rowId = Long.parseLong(idInserted);
 		
-		
 		Websocket.alertUserThatImageIsReady(uploadId, rowId);
 		
-		
+
+		ctx.status(200).result("sent broadcast");
+
 	}
 	
 	protected static void upload(Context ctx) {

@@ -44,7 +44,11 @@ setInterval(() => {
   const community = process.env.SNMP_COMMUNITY || "public";
 
   const session = snmp.createSession(ipAddress, community);
-  const oids = ["1.3.6.1.2.1.1.5.0", "1.3.6.1.2.1.1.6.0", "1.3.6.1.2.1.1.3.0"];
+  const oids = [
+    "1.3.6.1.2.1.1.1.0", // OS
+    "1.3.6.1.4.1.2021.10.1.3.1", // CPU
+    "1.3.6.1.4.1.2021.4.6.0", // RAM free
+  ];
 
   session.get(oids, (error, varbinds) => {
     if (error) {
@@ -61,12 +65,12 @@ setInterval(() => {
         if (snmp.isVarbindError(varbinds[i])) {
           console.error("SNMP Varbind Error:", snmp.varbindError(varbinds[i]));
         } else {
-          // sysName,
-          // sysLocation,
-          // sysUpTime
+          // OS,
+          // CPU,
+          // RAM free
           // save to mongodb
           dbMongo.connection.collection("snmp_data").insertOne({
-            name: i === 0 ? "sysName" : i === 1 ? "sysLocation" : "sysUpTime",
+            name: i === 0 ? "OS" : i === 1 ? "CPU" : "RAM free",
             oid: varbinds[i].oid,
             value: varbinds?.[i]?.value?.toString() || "",
             timestamp: new Date(),

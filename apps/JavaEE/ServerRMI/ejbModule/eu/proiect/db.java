@@ -13,7 +13,7 @@ public class db {
 		
 
 	
-	public static long saveAsBlob(byte[] imageOriginal, byte[] imageZoomed)  {
+	public static long saveAsBlob(byte[] imageOriginal, byte[] imageZoomed, String typeImage)  {
 		Connection conn;
 		try {
 			conn = db.getConnection();
@@ -23,26 +23,31 @@ public class db {
 		
 		
 		// save image in table
-		String sql = "INSERT INTO images (image_original, image_zoomed) VALUES ( ?, ?)";
+		String sql = "INSERT INTO images (image_original, image_zoomed, type_image) VALUES ( ?, ?, ?)";
 		
-		PreparedStatement ps = conn.prepareStatement(sql);
+		PreparedStatement ps = conn.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
 		
 		ps.setBytes(1, imageOriginal);
 		ps.setBytes(2, imageZoomed);
+		ps.setString(3, typeImage);
 		
 		ps.executeUpdate();
 		System.out.println("RowInserted in mysql");
 
-		conn.close();
+		
+		
 		
 		try (ResultSet rs = ps.getGeneratedKeys()) {
 			if (rs.next()) {
 				long insertId = rs.getLong(1);
 				System.out.println("Inserted ID: " + insertId);
 				
+				conn.close();
+						
 				return insertId;
 			}
 		}
+		
 		
 		
 		
@@ -71,6 +76,7 @@ public class db {
 				id BIGINT AUTO_INCREMENT PRIMARY KEY,
 				image_original LONGBLOB,
 				image_zoomed LONGBLOB,
+				type_image VARCHAR(10),
 				created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 			);
 		""";

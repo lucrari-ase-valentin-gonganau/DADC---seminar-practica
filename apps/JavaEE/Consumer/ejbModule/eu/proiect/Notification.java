@@ -17,12 +17,15 @@ public class Notification {
 		HttpClient client = HttpClient.newHttpClient();
 		String formData = "uploadId=" + uploadId + "&idInserted="+idInserted;
 		
+		URI pathUrl = URI.create(url + ":" + port + "/notify/image/status");
 		HttpRequest request = (HttpRequest) HttpRequest.newBuilder()
-				.uri(URI.create(url + ":" + port + "/notify/image/status"))
+				.uri(pathUrl)
 				.header("Content-Type", "application/x-www-form-urlencoded")
 				.POST(HttpRequest.BodyPublishers.ofString(formData))
 				.build();
 				
+		
+		System.out.println("Path: " + pathUrl +": formData: " + formData);
 		
 		try {
 			HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());

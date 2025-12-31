@@ -1,5 +1,6 @@
 package eu;
 
+import java.time.Duration;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -12,6 +13,8 @@ public class Websocket {
 	
 	public static void notifications(WsConfig ws) {
 		ws.onConnect(ctx -> {
+			ctx.session.setIdleTimeout(Duration.ofMinutes(10)); // keep only ten minutes the session
+			
 			String sessionId = ctx.sessionId().toString();
 			websocketSession.put(sessionId, ctx);
 			
@@ -31,16 +34,6 @@ public class Websocket {
 	
 	
 	public static void alertUserThatImageIsReady(String uploadId, long rowId) {
-		
-		WsContext ws = websocketSession.get(uploadId);
-		
-		if(ws == null) {
-			System.out.println("SessionId not exists in websocket");
-			
-			return;
-		}
-		
-		
 		String json = """
 		{
 				"rowId": %d,
@@ -49,10 +42,14 @@ public class Websocket {
 		""".formatted(rowId);
 
 		try {
-			ws.send(json);
+			// for demonstration, let's sent as broadcast ... 
+			websocketSession.forEach((key, ctx) -> {
+				ctx.send(json);
+			});
+			
 		} catch ( Exception e) {
 			e.printStackTrace();
-			System.err.println("Failed to send to " + uploadId);
+			System.err.println("Failed to send broadcast ws for uploadId: " + uploadId);
 		}
 		
 	}

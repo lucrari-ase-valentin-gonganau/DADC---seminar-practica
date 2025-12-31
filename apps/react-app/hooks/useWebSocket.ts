@@ -2,7 +2,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 export const useWebSocket = (url: string) => {
   const [isConnected, setIsConnected] = useState(false);
-  const [lastMessage, setLastMessage] = useState<MessageEvent | null>(null);
+  const [lastMessage, setLastMessage] = useState<{
+    rowId: number;
+    status: string;
+  } | null>(null);
   const wsRef = useRef<WebSocket | null>(null);
   const reconnectTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const connectRef = useRef<(() => void) | null>(null);
@@ -15,9 +18,11 @@ export const useWebSocket = (url: string) => {
       setIsConnected(true);
     };
     ws.onmessage = (event) => {
-      console.log("WebSocket message received:", event?.data);
-      if (event?.data) {
-        setLastMessage(event.data);
+      console.log("WebSocket message received:", JSON.parse(event.data));
+      if (event?.data && typeof event.data === "string") {
+        const data = JSON.parse(event.data);
+
+        setLastMessage(data);
       }
     };
 

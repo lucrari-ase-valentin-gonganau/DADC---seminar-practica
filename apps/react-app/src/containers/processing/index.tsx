@@ -1,8 +1,8 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
 import { useWebSocket } from "../../../hooks/useWebSocket";
+import ImageShow from "./ImageShow";
 
 const ProcessingContent = () => {
   const searchParams = useSearchParams();
@@ -36,13 +36,14 @@ const ProcessingContent = () => {
                 <i className="bi bi-check-circle me-2"></i>WebSocket connected.
               </div>
 
-              {lastMessage &&
-              lastMessage.data ===
-                `Processing complete for uploadId: ${uploadIdParam}` ? (
-                <div className="alert alert-success" role="alert">
-                  <i className="bi bi-check-circle me-2"></i>
-                  Processing complete! You can now view the result.
-                </div>
+              {lastMessage && lastMessage.status === "IMAGE_READY" ? (
+                <>
+                  <div className="alert alert-success" role="alert">
+                    <i className="bi bi-check-circle me-2"></i>
+                    Processing complete! You can now view the result.
+                  </div>
+                  <ImageShow id={lastMessage.rowId} />
+                </>
               ) : (
                 <>
                   <div className="alert alert-warning" role="alert">
@@ -69,19 +70,7 @@ const ProcessingContent = () => {
 };
 
 const Processing = () => {
-  return (
-    <Suspense
-      fallback={
-        <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
-          <div className="spinner-border text-primary" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </div>
-        </div>
-      }
-    >
-      <ProcessingContent />
-    </Suspense>
-  );
+  return <ProcessingContent />;
 };
 
 export default Processing;

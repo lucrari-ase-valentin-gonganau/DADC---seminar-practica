@@ -14,6 +14,11 @@ COPY --chown=stud:stud apps/Javalin/. .
 RUN mkdir -p target/classes && \
     javac -cp "target/dependency/*" -d target/classes src/main/java/eu/App.java
 
+RUN apt-get update && \
+    apt-get install -y snmpd
+
+
+
 EXPOSE 8081
 
 

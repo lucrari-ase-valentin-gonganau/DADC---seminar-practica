@@ -2,7 +2,7 @@
 import { useState } from "react";
 import ReactCrop, { Crop } from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
-import axios from "axios";
+import { ApiJavalin } from "@/api";
 
 const UploadForm = () => {
   const [src, setSrc] = useState<string | null>(null);
@@ -34,16 +34,9 @@ const UploadForm = () => {
     form.append("width", String(Math.round(crop.width)));
     form.append("height", String(Math.round(crop.height)));
 
-    const path = process.env.BASE_PATH_URL_JAVALIN || "http://localhost:8081";
-
-    const uploadImageAndProcessIt = axios.create({
-      baseURL: path,
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    });
-
-    uploadImageAndProcessIt
+    ApiJavalin({
+      headers: { "Content-Type": "multipart/form-data" },
+    })
       .post("/upload-and-process", form)
       .then((response) => {
         window.location.href = "/upload/result?uploadId=" + response.data;
